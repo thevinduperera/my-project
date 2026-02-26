@@ -9,7 +9,9 @@ def get_grade(avg):
     else:
         return "General Pass"
 
-student_marks = [75, 80, 90]
+marks_input = input("Enter marks separated by commas: ")
+student_marks = list(map(int, marks_input.split(",")))
+
 average = calculate_average(student_marks)
 
 print("Average:", average)
