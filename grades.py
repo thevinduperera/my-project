@@ -16,3 +16,8 @@ average = calculate_average(student_marks)
 
 print("Average:", average)
 print("Grade:", get_grade(average))
+
+
+def highest_mark(marks):
+    return max(marks)
+print("Highest Mark:", highest_mark(student_marks))
